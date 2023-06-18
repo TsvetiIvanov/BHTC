@@ -1,0 +1,30 @@
+style.css
+
+body {
+  background-color: #f2f2f2;
+}
+
+#workplace-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul#workplaces {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#workplaces li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+ul#workplaces li span {
+  font-weight: bold;
+  color: #336699;
+  margin-left: 10px;
+}
