@@ -90,6 +90,13 @@ function populateWorkplacesAndNames() {
   const workplacesNamesList = document.getElementById('workplaces-names');
   workplacesNamesList.innerHTML = '';
 
+  // Update current date in the footer
+  const currentDateElement = document.getElementById('current-date');
+  const option = { day: `numeric`, month: `long`, year: `numeric` }
+  const currentDate = new Date().toLocaleDateString();
+  currentDateElement.textContent = `Date: ${currentDate}`;
+
+
   // Populate workplaces and corresponding names
   for (const [workplace, data] of Object.entries(workplaceNames)) {
     const listItem = document.createElement('li');
