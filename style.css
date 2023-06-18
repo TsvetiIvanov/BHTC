@@ -1,5 +1,3 @@
-style.css
-
 body {
   background-color: #f2f2f2;
 }
@@ -13,23 +11,22 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul#workplaces {
+ul#workplaces-names {
   list-style-type: none;
   padding: 0;
 }
 
-ul#workplaces li {
+ul#workplaces-names li {
   margin-bottom: 10px;
   font-size: 24px; /* Increased font size to 24px */
 }
 
-ul#workplaces li span {
+ul#workplaces-names li span {
   font-weight: bold;
   color: #336699;
   margin-left: 10px;
 }
 
-ul#workplaces li:not(:last-child) {
+ul#workplaces-names li:not(:last-child) {
   margin-bottom: 20px; /* Added extra margin-bottom to create spacing between workplacenames */
 }
-
