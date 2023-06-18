@@ -42,7 +42,7 @@ const workplaceNames = {
   },
   'MNB CLT 3': {
     dropdownCount: 2,
-    names: [` `,'Sivlia I', 'Olivia']
+    names: [` `,'Silvia I', 'Olivia']
   },
   'Touareg': {
     dropdownCount: 1,
