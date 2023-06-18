@@ -1,26 +1,89 @@
 // Sample list of workplaces and corresponding names
 const workplaceNames = {
-  'CMF1': ['Sashka Z', 'Sashka K', 'Sivlia I'],
-  'VolvoBB-CU': ['Sashka Z', 'Magdalena'],
-  'VolvoSpa': ['Sashka Z', 'Nadejda', 'Sashka K'],
-  'BR 1': ['Zvezdelina', 'Silvia I', 'Nadejda'],
-  'BR 2': ['Silviq L', 'Sivlia I', 'Nadejda'],
-  'Scania': ['Elza', 'Vanq'],
-  'PTC35UP': ['Sashka Z', 'Sashka K', 'Valeri'],
-  'Man BB/CU': ['Sashka K', 'Elena E'],
-  'MQB CLT 1': ['Koce', 'Misho', 'Sophia'],
-  'MQB CLT 2': ['Koce', 'Misho', 'Sophia'],
-  'MNB CLT 3': ['Sivlia I', 'Olivia', 'Sophia'],
-  'Touareg': ['Rumqna', 'Rayna', 'Sophia'],
-  'MLBevo': ['Sashka Z', 'Sashka K', 'Sophia'],
-  'Audi Heck': ['Rayna', 'Silvia M', 'Iliyana', `Vili`],
-  'MQB 37': ['Elena E', 'Emilia'],
-  'MEB 31': ['Magdalena', 'Nina'],
-  'MFA2': ['Danislava', 'Lili', 'Dimitar'],
-  'MQB CLT Touch': ['Svetla', 'Rosi', 'Stefi',`Vanq`],
-  'MQB 27 Touch': ['Vili', 'Elena K', 'Olivera',`Valeri`]
+  'CMF1': {
+    dropdownCount: 3,
+    names: [` `,'Sashka Z', 'Sashka K', 'Sivlia I']
+  },
+  'VolvoBB-CU': {
+    dropdownCount: 1,
+    names: [` `,'Sashka Z', 'Magdalena']
+  },
+  'VolvoSpa': {
+    dropdownCount: 1,
+    names: [` `,'Sashka Z', 'Nadejda', 'Sashka K']
+  },
+  'BR 1': {
+    dropdownCount: 2,
+    names: [` `,'Zvezdelina', 'Silvia I', 'Nadejda']
+  },
+  'BR 2': {
+    dropdownCount: 1,
+    names: [` `,'Silviq L', 'Sivlia I', 'Nadejda']
+  },
+  'Scania': {
+    dropdownCount: 1,
+    names: [` `,'Elza', 'Vanq']
+  },
+  'PTC35UP': {
+    dropdownCount: 1,
+    names: [` `,'Sashka Z', 'Sashka K', 'Valeri']
+  },
+  'Man BB/CU': {
+    dropdownCount: 1,
+    names: [` `,'Sashka K', 'Elena E']
+  },
+  'MQB CLT 1': {
+    dropdownCount: 3,
+    names: [` `,'Koce', 'Misho']
+  },
+  'MQB CLT 2': {
+    dropdownCount: 3,
+    names: [` `,'Koce', 'Misho']
+  },
+  'MNB CLT 3': {
+    dropdownCount: 2,
+    names: [` `,'Sivlia I', 'Olivia']
+  },
+  'Touareg': {
+    dropdownCount: 1,
+    names: [` `,'Rumqna', 'Rayna']
+  },
+  'MLBevo': {
+    dropdownCount: 1,
+    names: [` `,'Sashka Z', 'Sashka K']
+  },
+  'Audi Heck': {
+    dropdownCount: 4,
+    names: [` `,'Rayna', 'Silvia M', 'Iliyana', `Vili`]
+  },
+  'MQB 37': {
+    dropdownCount: 2,
+    names: [` `,'Elena E', 'Emilia']
+  },
+  'MEB 31': {
+    dropdownCount: 2,
+    names: [` `,'Magdalena', 'Nina']
+  },
+  'MFA2': {
+    dropdownCount: 3,
+    names: [` `,'Danislava', 'Lili', 'Dimitar']
+  },
+  'MQB CLT Touch': {
+    dropdownCount: 4,
+    names: [` `,'Svetla', 'Rosi', 'Stefi',`Vanq`]
+  },
+  'MQB 27 Touch': {
+    dropdownCount: 4,
+    names: [` `,'Vili', 'Elena K', 'Olivera',`Valeri`]
+  }
   // Add more workplaces and names here
 };
+
+// Function to remove the workplace line
+function removeWorkplaceLine(workplaceElement) {
+  const listItem = workplaceElement.parentElement;
+  listItem.remove();
+}
 
 // Function to populate workplaces and names
 function populateWorkplacesAndNames() {
@@ -28,15 +91,53 @@ function populateWorkplacesAndNames() {
   workplacesNamesList.innerHTML = '';
 
   // Populate workplaces and corresponding names
-  for (const [workplace, names] of Object.entries(workplaceNames)) {
+  for (const [workplace, data] of Object.entries(workplaceNames)) {
     const listItem = document.createElement('li');
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'X';
+    removeButton.addEventListener('click', function() {
+      removeWorkplaceLine(this);
+    });
+    listItem.appendChild(removeButton);
+
     const workplaceElement = document.createElement('span');
     workplaceElement.textContent = workplace + ': ';
     listItem.appendChild(workplaceElement);
 
-    const namesElement = document.createElement('span');
-    namesElement.textContent = names.join(', ');
-    listItem.appendChild(namesElement);
+    const dropdowns = [];
+
+    // Create dropdown menus for each workplace name based on dropdownCount
+    for (let i = 0; i < data.dropdownCount; i++) {
+      const namesElement = document.createElement('select');
+      dropdowns.push(namesElement);
+
+      // Create an option for each name
+      for (const name of data.names) {
+        const option = document.createElement('option');
+        option.textContent = name;
+        namesElement.appendChild(option);
+      }
+
+      // Add event listener to handle name selection
+      namesElement.addEventListener('change', function(event) {
+        const selectedName = event.target.value;
+
+        // Disable the selected option in the remaining dropdown menus
+        const remainingNamesElements = Array.from(document.querySelectorAll('select[name="names"]'));
+        remainingNamesElements.forEach(function(element) {
+          const options = Array.from(element.options);
+          options.forEach(function(option) {
+            if (option.value === selectedName) {
+              option.disabled = true;
+            }
+          });
+        });
+      });
+
+      namesElement.setAttribute('name', 'names');
+      listItem.appendChild(namesElement);
+    }
 
     workplacesNamesList.appendChild(listItem);
   }
