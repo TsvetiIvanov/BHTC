@@ -2,7 +2,7 @@
 const workplaceNames = {
   'CMF1': {
     dropdownCount: 3,
-    names: [` `,'Sashka Z', 'Sashka K', 'Sivlia I']
+    names: [` `,'Sashka Z', 'Sashka K', 'Silvia I']
   },
   'VolvoBB-CU': {
     dropdownCount: 1,
@@ -18,7 +18,7 @@ const workplaceNames = {
   },
   'BR 2': {
     dropdownCount: 1,
-    names: [` `,'Silviq L', 'Sivlia I', 'Nadejda']
+    names: [` `,'Silvia L', 'Silvia I', 'Nadejda']
   },
   'Scania': {
     dropdownCount: 1,
