@@ -20,7 +20,7 @@ ul#workplaces {
 
 ul#workplaces li {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 24px; /* Increased font size to 24px */
 }
 
 ul#workplaces li span {
@@ -28,3 +28,8 @@ ul#workplaces li span {
   color: #336699;
   margin-left: 10px;
 }
+
+ul#workplaces li:not(:last-child) {
+  margin-bottom: 20px; /* Added extra margin-bottom to create spacing between workplacenames */
+}
+
