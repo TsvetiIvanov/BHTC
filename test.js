@@ -2,103 +2,103 @@
 const workplaceNames = {
   'CMF1': {
     dropdownCount: 3,
-    names: [` `,`Sashka Z`, `Sashka K`, `Silvia I`]
+    names: [` `, `Sashka Z`, `Sashka K`, `Silvia I`, `Nadejda`, `Elena E`, `Dimitar`, `Nina`, `Emilia`, `Marinela`, `Rumqna S`, `Silvia L`, `Konstantin`, `Zvezdelina`]
   },
   'VolvoBB-CU': {
     dropdownCount: 1,
-    names: [` `,`Sashka Z`, `Magdalena`]
+    names: [` `,`Sashka Z`, `Magdalena`, `Sashka K`]
   },
   'VolvoSpa': {
     dropdownCount: 1,
-    names: [` `,`Sashka Z`, `Nadejda`, `Sashka K`, `Magi`]
+    names: [` `,`Sashka Z`, `Nadejda`, `Sashka K`, `Magdalena`, `Danislava`, `Iliyana`]
   },
   'Man BB/CU': {
     dropdownCount: 1,
-    names: [` `,`Sashka K`, `Elena E`]
+    names: [` `,`Sashka K`, `Elena E`, `Vanq`, `Marinela`]
   },
   'BR 1': {
     dropdownCount: 2,
-    names: [` `, `Zvezdelina`, `Silvia I`, `Nadejda`, `Nina`]
+    names: [` `, `Zvezdelina`, `Silvia I`, `Nadejda`, `Sashka K`, `Sashka Z`, `Nina`, `Silvia L`, `Valeri`, `Danislava`, `Dimitar`, `Iliyana`, `Magdalena`, `Margarita`, `Marinela`, `Rosica`, `Rumqna S`, `Silvia M`]
   },
   'BR 2': {
     dropdownCount: 1,
-    names: [` `,`Silvia L`, `Silvia I`, `Nadejda`, `Nina`]
+    names: [` `, `Zvezdelina`, `Silvia I`, `Nadejda`, `Sashka K`, `Sashka Z`, `Nina`, `Silvia L`, `Valeri`, `Danislava`, `Dimitar`, `Iliyana`, `Magdalena`, `Margarita`, `Marinela`, `Rosica`, `Rumqna S`, `Silvia M`, `Elena M`]
   },
   'MFA2': {
     dropdownCount: 3,
-    names: [` `, `Danislava`, `Lili`, `Dimitar`, `Ali`]
+    names: [` `, `Danislava`, `Liliyana`, `Dimitar`, `Ali`, `Zvezdelina`, `Elza`, `Rayna`, `Rosica`, `Svetla`, `Silvia M`, `Stefka`]
   },
   'Scania': {
     dropdownCount: 1,
-    names: [` `, `Elza`, `Vanq`]
+    names: [` `, `Elza`, `Vanq`, `Georgi`, `Svetla`]
   },
   'PTC35UP': {
     dropdownCount: 1,
-    names: [` `, `Sashka Z`, `Sashka K`, `Valeri`]
+    names: [` `, `Sashka Z`, `Sashka K`, `Valeri`, `Elena E`, `Marinela`, `Elena K`]
   },
   'MQB Heck' : {
     dropdownCount: 5,
-    names: [` `, `Valeri`, `Koce`, `Elena E`]
+    names: [` `, `Dimitar`, `Konstantin`, `Elena E`, `Vanq`, `Rumqna D`, `Sevdelin`, `Mihail`, `Svetla`, `Valeri`, `Stefka`, `Violeta`, `Elena K`, `Margarita`]
   },
   'MQB 27' : {
     dropdownCount: 3,
-    names: [` `, `Rumi`, `Sevdelin`, `Angel`, `Zvezdelina`, `Olivera`]
+    names: [` `, `Rumqna S`, `Sevdelin`, `Angel`, `Zvezdelina`, `Rumqna D`, `Vanq`, `Danislava`, `Elza`, `Iliyana`, `Rayna`, `Rosica`, `Svetla`, `Stefka`, `Konstantin`, `Margarita`]
   },
   'MQB CLT 1': {
     dropdownCount: 3,
-    names: [` `, `Koce`, `Misho`, `Danislava`, `Olivera`, `Sasho`]
+    names: [` `, `Konstantin`, `Liliyana`, `Mihail`, `Alexander`, `Dimitar`, `Silvia I`, `Angel`, `Valeri`, `Vanq`, `Violeta`, `Danislava`, `Elena K`, `Elena E`, `Elza`, `Emilia`, `Zvezdelina`, `Iliyana`, `Rayna`, `Rosica`, `Rumqna S`, `Rumqna D`, `Sashka Z`, `Svetla`, ` Sevdelin`, `Silvia M`, `Silvia L`, `Stefka`]
   },
   'MQB CLT 2': {
     dropdownCount: 3,
-    names: [` `, `Koce`, `Misho`, `Danislava`, `Olivera`, `Sasho`]
+    names: [` `, `Konstantin`, `Liliyana`, `Mihail`, `Alexander`, `Dimitar`, `Silvia I`, `Angel`, `Valeri`, `Vanq`, `Violeta`, `Danislava`, `Elena K`, `Elena E`, `Elza`, `Emilia`, `Zvezdelina`, `Iliyana`, `Rayna`, `Rosica`, `Rumqna S`, `Rumqna D`, `Sashka Z`, `Svetla`, ` Sevdelin`, `Silvia M`, `Silvia L`, `Stefka`]
   },
   'MNB CLT 3': {
     dropdownCount: 2,
-    names: [` `, `Silvia I`, `Olivera`, `Sasho`]
+    names: [` `, `Liliyana`, `Dimitar`, `Alexander`, `Angel`, `Valeri`, `Vili`, `Danislava`, `Elena K`, `Elza`, `Emilia`, `Zvezdelina`, `Iliyana`, `Rayna`, `Rosica`, `Rumqna D`, `Svetla`, ` Sevdelin`, `Silvia M`, `Stefka`]
   },
   'MQB CLT 5': {
     dropdownCount: 1,
-    names: [` `, `Sasho`]
+    names: [` `, `Valeri`, `Vanq`, `Violeta`, ` Danislava`, `Elza`, `Dimitar`, `Zvezdelina`, `Nadejda`, `Rayna`, `Rumqna D`, `Sashka Z`, `Svetla`, `Elena M`]
   },
   'Touareg': {
     dropdownCount: 1,
-    names: [` `, `Rumqna`, `Rayna`]
+    names: [` `, `Vanq`, `Elena E`, `Svetla`, `Stefka`]
   },
   'MLBevo': {
     dropdownCount: 1,
-    names: [` `, `Sashka Z`, `Sashka K`]
+    names: [` `, `Sashka Z`, `Sashka K`, `Marinela`]
   },
   'Audi Heck': {
     dropdownCount: 4,
-    names: [` `, `Rayna`, `Silvia M`, `Iliyana`, `Vili`, `Emilia`]
+    names: [` `, `Rayna`, `Silvia M`, `Iliyana`, `Violeta`, `Emilia`, `Albina`, `Margarita`, `Svetla`, `Stefka`]
   },
   'MQB 37': {
     dropdownCount: 2,
-    names: [` `, `Elena E`, `Emilia`, `Magdalena`, `Nina`]
+    names: [` `, `Elena E`, `Emilia`, `Magdalena`, `Nina`, `Rumqna S`, `Anton`, `Nadejda`, `Danislava`, `Elza`, `Iliyana`, `Margarita`, `Rosica`, `Svetla`, `Angel`]
   },
   'MEB 31': {
     dropdownCount: 2,
-    names: [` `, `Magdalena`, `Nina`, `Elena E`, `Emilia`]
+    names: [` `, `Elena E`, `Emilia`, `Magdalena`, `Nina`, `Rumqna S`, `Nadejda`, `Danislava`, `Elza`, `Iliyana`, `Margarita`, `Rosica`, `Svetla`, `Angel`]
   },
   'ITOS 1': {
-    dropdownCount: 4,
-    names: [` `, `Elena M`, `Rumqna`, `Katq`, `Marinela`, `Vanq`, `Elena K`, `Nadejda`]
+    dropdownCount: 5,
+    names: [` `, `Elena M`, `Rumqna S`, `Katq`, `Marinela`, `Silvia L`, `Elena K`, `Nadejda`, `Elena E`, `Elza`, `Zvezdelina`, `Margarita`, `Danislava`, `Vanq`, `Nikolai`]
   },
   'ITOS 2': {
-    dropdownCount: 4,
-    names: [` `, `Elena M`, `Rumqna`, `Katq`, `Marinela`, `Vanq`, `Elena K`, `Nadejda`]
+    dropdownCount: 5,
+    names: [` `, `Elena M`, `Rumqna S`, `Katq`, `Marinela`, `Silvia L`, `Elena K`, `Nadejda`, `Elena E`, `Elza`, `Zvezdelina`, `Margarita`, `Danislava`, `Vanq`, `Nikolai`]
   },
   'MRA2 Rear': {
     dropdownCount: 2,
-    names: [` `, `Marinela`, ` Vanq`, `Silvia M`, `Valeri` ]
+    names: [` `, `Marinela`, `Valeri`, `Violeta`, `Silvia M`, `Vanq`, `Margarita`, `Svetla`]
   },
   'MQB CLT Touch': {
     dropdownCount: 4,
-    names: [` `, `Svetla`, `Rosi`, `Stefi`, `Vanq`, `Valeri`]
+    names: [` `, `Svetla`, `Rosica`, `Stefka`, `Vanq`, `Valeri`, `Margarita`, `Olivera`]
   },
   'MQB 27 Touch': {
     dropdownCount: 4,
-    names: [` `, `Vili`, `Elena K`, `Olivera`, `Valeri`, `Tatqna`, `Donka`]
+    names: [` `, `Violeta`, `Elena K`, `Olivera`, `Valeri`, `Tatqna`, `Margarita`, `Elza`, `Shani`, `Vanq`, `Zvezdelina`, `Rumqna D`, `Sevdelin`, `Stefka`, `Elena E`]
   }
   // Add more workplaces and names here
 };
@@ -119,7 +119,6 @@ function populateWorkplacesAndNames() {
   const option = { day: `numeric`, month: `long`, year: `numeric` }
   const currentDate = new Date().toLocaleDateString();
   currentDateElement.textContent = `Date: ${currentDate}`;
-
 
   // Populate workplaces and corresponding names
   for (const [workplace, data] of Object.entries(workplaceNames)) {
@@ -149,23 +148,38 @@ function populateWorkplacesAndNames() {
         option.textContent = name;
         namesElement.appendChild(option);
       }
+	  
+      // Add a blank space option
+      const blankOption = document.createElement('option');
+      blankOption.value = ""; // Value for the blank space option
+      blankOption.textContent = ""; // Text for the blank space option
+      namesElement.insertBefore(blankOption, namesElement.firstChild);
 
       // Add event listener to handle name selection
       namesElement.addEventListener('change', function(event) {
         const selectedName = event.target.value;
 
-        // Disable the selected option in the remaining dropdown menus
-        const remainingNamesElements = Array.from(document.querySelectorAll('select[name="names"]'));
-        remainingNamesElements.forEach(function(element) {
-          const options = Array.from(element.options);
-          options.forEach(function(option) {
-            if (option.value === selectedName) {
-              option.disabled = true;
-			} else {
-				  option.disabled = false;
-            }
+        // Show previously hidden name if blank space is selected
+        if (selectedName === "") {
+          const remainingNamesElements = Array.from(document.querySelectorAll('select[name="names"]'));
+          remainingNamesElements.forEach(function(element) {
+            const options = Array.from(element.options);
+            options.forEach(function(option) {
+              option.style.display = ''; // Show the previously hidden option
+            });
           });
-        });
+        } else {
+          // Hide the selected option in the remaining dropdown menus
+          const remainingNamesElements = Array.from(document.querySelectorAll('select[name="names"]'));
+          remainingNamesElements.forEach(function(element) {
+            const options = Array.from(element.options);
+            options.forEach(function(option) {
+              if (option.value === selectedName) {
+                option.style.display = 'none';
+              }
+            });
+          });
+        }
       });
 
       namesElement.setAttribute('name', 'names');
