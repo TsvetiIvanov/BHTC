@@ -90,15 +90,19 @@ const workplaceNames = {
   },
   'MRA2 Rear': {
     dropdownCount: 2,
-    names: [` `, `Marinela`, `Valeri`, `Violeta`, `Silvia M`, `Vanq`, `Margarita`, `Svetla`]
+    names: [` `, `Marinela`, `Valeri`, `Violeta`, `Silvia M`, `Vanq`, `Margarita`, `Svetla`, `Tatqna`]
   },
   'MQB CLT Touch': {
     dropdownCount: 4,
-    names: [` `, `Svetla`, `Rosica`, `Stefka`, `Vanq`, `Valeri`, `Margarita`, `Olivera`]
+    names: [` `, `Svetla`, `Rosica`, `Stefka`, `Vanq`, `Valeri`, `Margarita`, `Olivera`, `Sevdelin`, `Rumqna D`]
   },
   'MQB 27 Touch': {
     dropdownCount: 4,
     names: [` `, `Violeta`, `Elena K`, `Olivera`, `Valeri`, `Tatqna`, `Margarita`, `Elza`, `Shani`, `Vanq`, `Zvezdelina`, `Rumqna D`, `Sevdelin`, `Stefka`, `Elena E`]
+  },
+  'BMW': {
+    dropdownCount: 7,
+    names: [` `, `Silvia L`, `Maagdalena`, `Emilia`, `Danislava`, `Katq`, `Nikolai`, `Valeri`]
   }
   // Add more workplaces and names here
 };
