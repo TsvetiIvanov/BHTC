@@ -70,7 +70,7 @@ const workplaceNames = {
   },
   'Audi Heck': {
     dropdownCount: 4,
-    names: [` `, `Rayna`, `Silvia M`, `Iliyana`, `Violeta`, `Emilia`, `Albina`, `Margarita`, `Svetla`, `Stefka`]
+    names: [` `, `Rayna`, `Silvia M`, `Iliyana`, `Violeta`, `Emilia`, `Albina`, `Margarita`, `Svetla`, `Stefka`, `Danislava`]
   },
   'MQB 37': {
     dropdownCount: 2,
@@ -101,8 +101,8 @@ const workplaceNames = {
     names: [` `, `Violeta`, `Elena K`, `Olivera`, `Valeri`, `Tatqna`, `Margarita`, `Elza`, `Shani`, `Vanq`, `Zvezdelina`, `Rumqna D`, `Sevdelin`, `Stefka`, `Elena E`]
   },
   'BMW': {
-    dropdownCount: 7,
-    names: [` `, `Silvia L`, `Maagdalena`, `Emilia`, `Danislava`, `Katq`, `Nikolai`, `Valeri`]
+    dropdownCount: 5,
+    names: [` `, `Silvia L`, `Magdalena`, `Emilia`, `Danislava`, `Katq`, `Nikolai`, `Valeri`, `Mihail`]
   }
   // Add more workplaces and names here
 };
